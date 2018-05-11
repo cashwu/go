@@ -6,11 +6,11 @@ import "net/http"
 import "net/url"
 import "io/ioutil"
 
-func main(){
-	
+func main() {
+
 	resp, err := http.Get("https://www.google.com.tw")
 	if err != nil {
-		return	
+		return
 	}
 
 	defer resp.Body.Close()
@@ -24,11 +24,11 @@ func main(){
 
 }
 
-func httpPost(){
-	resp, err := http.PostForm("" , url.Values { "key" : { "Value"} })
+func httpPost() {
+	resp, err := http.PostForm("", url.Values{"key": {"Value"}})
 
 	if err != nil {
-		return	
+		return
 	}
 
 	defer resp.Body.Close()
@@ -41,4 +41,3 @@ func httpPost(){
 	fmt.Println(string(body))
 
 }
-

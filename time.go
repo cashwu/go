@@ -11,7 +11,7 @@ func main() {
 
 	p(now)
 
-	then := time.Date(2018,5,10,11,11,11,1111,time.UTC)
+	then := time.Date(2018, 5, 10, 11, 11, 11, 1111, time.UTC)
 	p(then)
 
 	diff := now.Sub(then)
