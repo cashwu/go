@@ -1,14 +1,10 @@
-
 package main
 
 import "helloworld"
 import "github.com/JustinSDK/goexample"
 
-func main(){
+func main() {
 	helloworld.Hello()
 
 	goexample.Hi()
 }
-
-
-
